@@ -63,8 +63,8 @@ public class TestCases {
         wait.until(ExpectedConditions.urlContains("/formResponse"));
         String s1=driver.findElement(By.xpath("//div[@role='heading']")).getText();
         String s2=driver.findElement(By.xpath("//div[@class='vHW8K']")).getText();
+        System.out.println("TestCas ended");
         System.out.println(s1+"\n"+s2);
-        System.out.println("TestCase-01 Ended");
      }
     /*
      * Do not change the provided methods unless necessary, they will help in automation and assessment
