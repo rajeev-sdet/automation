@@ -62,7 +62,8 @@ public class TestCases {
         driver.findElement(By.xpath("//span[text()='Submit']")).click();
         wait.until(ExpectedConditions.urlContains("/formResponse"));
         String s1=driver.findElement(By.xpath("//div[@role='heading']")).getText();
-        System.out.println(s1);
+        String s2=driver.findElement(By.xpath("//div[@class='vHW8K']")).getText();
+        System.out.println(s1+"\n"+s2);
         System.out.println("TestCase-01 Ended");
      }
     /*
